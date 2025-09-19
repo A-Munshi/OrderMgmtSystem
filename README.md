@@ -1,4 +1,4 @@
-## 🛒 Flipkart-Style Order Management System (Java 25)
+## 🛒 Order Management System (Java 25)
 A **console-based Order Management System** built in **Java 25** (IntelliJ IDEA Ultimate), following strict coding restrictions.
 This project demonstrates **CRUD, search, and sorting** operations on a set of products — similar to a simplified Flipkart order/cart system.
 
