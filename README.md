@@ -11,7 +11,7 @@ This project demonstrates **CRUD, search, and sorting** operations on a set of p
 * **Custom Exceptions** → `ItemNotFoundException`, `DuplicateItemException`.
 * **Sorting with Comparators** → by **Name** and **Price**.
 
-<img width="499" height="413" alt="image" src="https://github.com/user-attachments/assets/9895c293-3e9e-416b-a4aa-8ff2dc4d1159" />
+<img width="1731" height="1433" alt="Screenshot 2025-09-19 175010" src="https://github.com/user-attachments/assets/11b5f57c-797c-439b-9c5d-72c3760a547b" />
 
 ### Project Structure
 ```
