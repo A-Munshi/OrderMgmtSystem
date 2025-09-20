@@ -1,11 +1,7 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class MainApp {
     public static void main(String[] args) {
         try {
-            Order order = new Order();
+            var order = new Order();
 
             // Adding products to the order (Flipkart cart simulation)
             order.addItem(new Item(201, "iPhone 15 Pro", 129999));
@@ -31,14 +27,14 @@ public class MainApp {
             order.viewItems();
 
             IO.println("\n---- Sort Products by Name ----");
-            List<Item> listByName = new ArrayList<>(order.getAllItems());
-            Collections.sort(listByName, new SortByName());
-            listByName.forEach(i -> IO.println(i.toString()));
+            order.getAllItems().stream()
+                 .sorted((a, b) -> a.getItemName().compareToIgnoreCase(b.getItemName()))
+                 .forEach(i -> IO.println(i.toString()));
 
             IO.println("\n---- Sort Products by Price ----");
-            List<Item> listByPrice = new ArrayList<>(order.getAllItems());
-            Collections.sort(listByPrice, new SortByPrice());
-            listByPrice.forEach(i -> IO.println(i.toString()));
+            order.getAllItems().stream()
+                 .sorted((a, b) -> Double.compare(a.getPrice(), b.getPrice()))
+                 .forEach(i -> IO.println(i.toString()));
 
         } catch (Exception e) {
             IO.println("Error: " + e.getMessage());
